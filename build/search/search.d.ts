@@ -1,4 +1,4 @@
 import { ItunesResult } from "../result/result";
-import { ItunesSearchOptions } from "./search-options";
-export declare const itunesSearchRoot = "https://itunes.apple.com/search";
-export declare function searchItunes(options: ItunesSearchOptions): Promise<ItunesResult>;
+import { ISearchOptions, ItunesSearchOptions } from "./search-options";
+export declare const itunesSearchRoot: string;
+export declare function searchItunes(options: ISearchOptions | ItunesSearchOptions): Promise<ItunesResult>;

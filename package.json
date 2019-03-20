@@ -1,6 +1,6 @@
 {
   "name": "node-itunes-search",
-  "version": "1.1.0",
+  "version": "1.2.2",
   "description": "A simple NodeJS wrapper for the ITunes Search API.",
   "main": "build/index.js",
   "types": "build/index.js",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/jacob-shuman/node-itunes-search#readme",
   "dependencies": {
-    "phin": "3.3.0"
+    "phin": "^2.9.3"
   },
   "devDependencies": {
     "@types/jest": "^23.3.9",
