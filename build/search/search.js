@@ -9,7 +9,9 @@ function searchItunes(options) {
         //Initializing passed options (adding methods when directly passing an object)
         const searchOptions = search_options_1.ItunesSearchOptions.from(options);
         phin(`${exports.itunesSearchRoot}?${searchOptions.toURI()}`, (err, res) => {
-            if (err) {
+            if (err || !res || res.statusCode!== 200) {
+                console.log('QUERY FAIL',options.toURI())
+
                 reject(err);
             }
             else {
