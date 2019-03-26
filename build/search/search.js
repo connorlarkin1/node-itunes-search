@@ -10,9 +10,9 @@ function searchItunes(options) {
         const searchOptions = search_options_1.ItunesSearchOptions.from(options);
         phin(`${exports.itunesSearchRoot}?${searchOptions.toURI()}`, (err, res) => {
             if (err || !res || res.statusCode!== 200) {
-                console.log('QUERY FAIL',options.toURI())
+                console.log('QUERY FAIL',res)
 
-                reject(err);
+                reject(res);
             }
             else {
                 try {
